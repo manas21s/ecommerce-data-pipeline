@@ -44,7 +44,8 @@ This project implements an end-to-end real-time data pipeline using AWS, Snowfla
 
 ## 📷 Dashboard Preview
 
-(Add screenshot here)
+<img width="620" height="341" alt="dashboard" src="https://github.com/user-attachments/assets/fdf39793-afcc-4db1-83dc-112ca35ba545" />
+
 
 ---
 
