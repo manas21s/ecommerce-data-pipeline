@@ -14,51 +14,9 @@ track revenue, customer behavior, and product performance efficiently.
 ---
 
 ## ⚙️ Architecture
- +----------------------+
-                |  Python Script       |
-                |  (Data Generator)    |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                |   Amazon S3          |
-                |   (raw/orders/)      |
-                +----------+-----------+
-                           |
-         +----------------+----------------+
-         |                                 |
-         v                                 v
-+-------------------+           +----------------------+
-| AWS Lambda        |           | Snowpipe             |
-| (Trigger)         |           | (Auto Ingest)        |
-+--------+----------+           +-----------+----------+
-         |                                  |
-         v                                  v
-+-------------------+            +----------------------+
-| Step Functions    |            | Snowflake RAW Table  |
-| (Orchestration)   |            +----------+-----------+
-+--------+----------+                       |
-         |                                  v
-         v                       +----------------------+
-+-------------------+           | Snowflake STREAM     |
-| AWS Glue          |           | (CDC Tracking)       |
-| (ETL Processing)  |           +----------+-----------+
-+--------+----------+                      |
-         |                                 v
-         v                       +----------------------+
-+---------------------+         | Snowflake TASK       |
-| S3 Processed Layer  |         | (Automation)         |
-+---------------------+         +----------+-----------+
-                                            |
-                                            v
-                                +----------------------+
-                                | Clean Tables + Views |
-                                +----------+-----------+
-                                            |
-                                            v
-                                +----------------------+
-                                | Power BI Dashboard   |
-                                +----------------------+
+
+<img width="1536" height="1024" alt="Designer (1)" src="https://github.com/user-attachments/assets/3aac8def-cb75-4bcc-82b5-ad06e093fd80" />
+
 
 ---
 
