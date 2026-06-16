@@ -15,7 +15,7 @@ track revenue, customer behavior, and product performance efficiently.
 
 ## ⚙️ Architecture
 
-<img width="1536" height="1024" alt="Designer (1)" src="https://github.com/user-attachments/assets/3aac8def-cb75-4bcc-82b5-ad06e093fd80" />
+<img width="1536" height="1024" alt="Designer (2)" src="https://github.com/user-attachments/assets/02b41cb6-f6bc-408e-8096-1ad51c7cc442" />
 
 
 ---
